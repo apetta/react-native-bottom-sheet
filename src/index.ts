@@ -24,6 +24,7 @@ export { useScrollableSetter } from './hooks/useScrollableSetter';
 export {
   BottomSheetScrollView,
   BottomSheetSectionList,
+  BottomSheetFlashList,
   BottomSheetFlatList,
   BottomSheetVirtualizedList,
 } from './components/bottomSheetScrollable';
@@ -55,6 +56,7 @@ export type { BottomSheetBackdropProps } from './components/bottomSheetBackdrop'
 export type { BottomSheetFooterProps } from './components/bottomSheetFooter';
 
 export type {
+  BottomSheetFlashListMethods,
   BottomSheetFlatListMethods,
   BottomSheetScrollViewMethods,
   BottomSheetSectionListMethods,
@@ -72,5 +74,6 @@ export type {
 
 //#region utilities
 export * from './constants';
+export { getKeyboardAnimationConfigs } from './utilities';
 export { enableLogging } from './utilities/logger';
 //#endregion
